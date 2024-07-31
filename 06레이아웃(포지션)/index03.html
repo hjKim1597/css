@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .reply-wrap {
+            border: 1px solid #777;
+            width: 500px;
+            margin: 0 auto;
+            position: relative;
+            padding: 10px;
+        }
+
+        .reply-wrap>.profile {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 80px;
+        }
+
+        .reply-content {
+            padding-left: 90px;
+        }
+
+        .reply-content>.box textarea {
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .control {
+            overflow: hidden;
+           
+        }
+
+        .control .left {
+            float: left;
+        }
+
+        .control .right {
+            float: right;
+        }
+
+        .control .left input {
+            display: block;
+            
+        }
+
+        .control .left input:nth-child(2) {
+            margin-top: 4px;
+        }
+
+        /* ------------------------------------------------------------------------ */
+        .bottom-box {
+            border: 1px solid #777;
+            width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .img-box {
+            width: 50px;
+        }
+        .bottom-box>.bottom-img {
+            float: left;
+            position: absolute;
+            
+        }
+        .bottom-content {padding-left: 90px; padding-right: 90px;}
+        .button-box {float: right; }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="reply-wrap">
+        <img src="img/bgimg.png" class="profile" alt="profile">
+
+        <div class="reply-content">
+            <div class="box">
+                <textarea name="" id=""></textarea>
+            </div>
+            <div class="control">
+                <div class="left">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <button type="button" class="right">등록하기</button>
+            </div>
+           
+
+
+        </div>
+    </div>
+
+    <div class="bottom-box">
+        
+            <img src="img/bgimg.png" class="bottom-img" alt="img">
+        
+        <div class="bottom-content">
+            <h1 class="bottom-title">제목</h1>
+            <ul >내용</ul>
+        </div>
+        <div class="button-box">
+        <button>삭제</button>
+        <button>수정</button>
+    </div>
+    </div>
+
+</body>
+
+</html>

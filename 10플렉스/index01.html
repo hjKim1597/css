@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: #999;
+            padding: 10px;
+        }
+
+        .box .item {
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- https://www.heropy.dev/p/Ha29GI -->
+
+
+
+    <h3>flex vs inline flex</h3>
+
+    <style>
+        .container {
+            display: inline-flex;
+            /*컨테이너 블럭배치 vs 인라인처럼 배치*/
+        }
+    </style>
+
+
+    <div class="container box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+    <div class="container box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr>
+
+    <h3>flex-direction (주축의 방향 , flex-wrap은 줄바꿈 여부)</h3>
+    <style>
+        .container2 {
+            display: flex;
+             /*기본값 row*/
+            flex-direction: row;
+           
+            width: 300px;
+            flex-wrap: wrap; /*기본값 nowrap (한줄표시) // wrap 영역이 꽉차면 자동으로 줄바꿈*/
+        }
+    </style>
+
+
+    <div class="container2 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr>
+    <h3>flex-flow(direction + wrap )</h3>
+
+    <style>
+        .container3 {
+            display: flex;
+            flex-flow: row nowrap; /*direction 에 줄바꿈 없음*/
+        }
+    </style>
+
+    <div class="container3 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        
+      
+    </div>
+
+</body>
+
+</html>
